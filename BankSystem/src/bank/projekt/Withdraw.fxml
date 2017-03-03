@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.projekt.WithdrawController">
+   <children>
+      <AnchorPane prefHeight="123.0" prefWidth="505.0">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="527.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Example.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="165.0" layoutY="143.0" text="Bank Withdrawal Function">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amountField" layoutX="162.0" layoutY="223.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutX="165.0" layoutY="193.0" text="Enter Withdraw Amount">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="173.0" prefHeight="0.0" prefWidth="536.0" />
+      <Button fx:id="withdrawButton" layoutX="162.0" layoutY="267.0" mnemonicParsing="false" onAction="#withdraw" prefWidth="70.0" text="Withdraw" />
+      <Button layoutX="253.0" layoutY="267.0" mnemonicParsing="false" prefWidth="70.0" text="Clear" />
+      <Button fx:id="cancelButton" layoutX="14.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancel" prefWidth="60.0" text="Cancel" />
+      <Separator layoutY="129.0" prefHeight="3.0" prefWidth="527.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.projekt.TransactionsController">
+   <children>
+      <AnchorPane prefHeight="123.0" prefWidth="505.0">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="527.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Example.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="acc" layoutX="89.0" layoutY="144.0" text="Transactions Information">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="173.0" prefHeight="0.0" prefWidth="536.0" />
+      <Button fx:id="cancelButton" layoutX="21.0" layoutY="451.0" mnemonicParsing="false" onAction="#cancel" prefWidth="60.0" text="Cancel" />
+      <Separator layoutY="129.0" prefHeight="3.0" prefWidth="527.0" />
+      <ListView fx:id="listView1" layoutX="125.0" layoutY="185.0" prefHeight="266.0" prefWidth="277.0" />
+   </children>
+</AnchorPane>

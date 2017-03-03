@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.projekt.ChangeController">
+   <children>
+      <AnchorPane prefHeight="123.0" prefWidth="505.0">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="527.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Example.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="165.0" layoutY="143.0" text="Change Customer Info">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfirstname" layoutX="162.0" layoutY="223.0" prefHeight="25.0" prefWidth="159.0" />
+      <TextField fx:id="txtpn" layoutX="162.0" layoutY="354.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutX="165.0" layoutY="193.0" text="New First Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="325.0" text="pNr of the Customer:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutY="173.0" prefHeight="0.0" prefWidth="536.0" />
+      <Button fx:id="change" layoutX="162.0" layoutY="391.0" mnemonicParsing="false" onAction="#changename" prefWidth="70.0" text="Register" />
+      <Button fx:id="clear" layoutX="251.0" layoutY="391.0" mnemonicParsing="false" onAction="#clear" prefWidth="70.0" text="Clear" />
+      <Button fx:id="cancelButton" layoutX="21.0" layoutY="451.0" mnemonicParsing="false" onAction="#cancel" prefWidth="60.0" text="Cancel" />
+      <Separator layoutY="129.0" prefHeight="3.0" prefWidth="527.0" />
+      <Label layoutX="165.0" layoutY="258.0" text="New Last Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtlastname" layoutX="162.0" layoutY="288.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label fx:id="notification" layoutX="164.0" layoutY="455.0" prefHeight="17.0" prefWidth="159.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

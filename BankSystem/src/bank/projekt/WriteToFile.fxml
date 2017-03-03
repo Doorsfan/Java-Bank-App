@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bank.projekt.WriteToFileController">
+   <children>
+      <AnchorPane prefHeight="123.0" prefWidth="505.0">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="527.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Example.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="178.0" layoutY="143.0" text="Bank Writing Function">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ErrorText" layoutX="150.0" layoutY="350" text="">
+          <font>
+              <Font name="System Bold" size="14.0" />
+          </font>
+      </Label>
+      <Label fx:id="labelText" layoutX="44.0" layoutY="176.0" text="Name of Destination File">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-4.0" layoutY="174.0" prefHeight="0.0" prefWidth="536.0" />
+      <Button fx:id="writeAllCustomers" layoutX="286.0" layoutY="304.0" mnemonicParsing="false" onAction="#WriteCustomers" prefHeight="25.0" prefWidth="138.0" text="Write All Customers" />
+      <Button fx:id="TransactionsCustomer" layoutX="60.0" layoutY="273.0" mnemonicParsing="false" onAction="#WriteTransactionsForCustomer" prefHeight="25.0" prefWidth="200.0" text="Write Transactions for Customer" />
+      <Button fx:id="cancelButton" layoutX="14.0" layoutY="335.0" mnemonicParsing="false" onAction="#cancel" prefWidth="60.0" text="Cancel" />
+      <Separator layoutY="129.0" prefHeight="3.0" prefWidth="527.0" />
+      <Button fx:id="TransactionsAllCustomers" layoutX="55.0" layoutY="304.0" mnemonicParsing="false" onAction="#WriteTransactionsForCustomers" text="Write Transactions for All Customers" />
+      <Button fx:id="writeCustomer" layoutX="284.0" layoutY="273.0" mnemonicParsing="false" onAction="#WriteCustomer" text="Write Chosen Customer" />
+      <Button fx:id="SelectFile" layoutX="218.0" layoutY="204.0" mnemonicParsing="false" onAction="#SelectFile" text="Select File" />
+      <Button fx:id="override" layoutX="327.0" layoutY="204.0" mnemonicParsing="false" onAction="#changeOverWrite" text="Overwrite : OFF" />
+   </children>
+</AnchorPane>

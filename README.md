@@ -1,1 +1,1 @@
-Java-Bank-App
+This is my Java related projects.
